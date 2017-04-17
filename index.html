@@ -1,43 +1,51 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
-    <title>HTML CSS Tutorial 01</title>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="navbar-static-top.css" rel="stylesheet">
+    <title>Web-Portfolio Malte Prieß</title>
   </head>
-
-  <body>
   
-    <div class="container">    
-      
-      <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="./">Home</a></li>
-            <li><a href="projects/">Projekte</a></li>
-            <li><a href="CV/">CV</a></li>
-            <li><a href="contact/">Kontakt</a></li>
-            <li><a href="aboutme/">Über mich</a></li>
-          </ul>
-        </div>
-      </div>   
+  <body>
+        
+    <div class="container col-sm-offset-2 col-sm-8">    
 
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+<!--            <a class="navbar-brand" href="#">Web-Portfolio</a>-->
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="./">Home</a></li>
+              <li><a href="projects/">Projekte</a></li>
+              <li><a href="CV/">CV</a></li>
+              <li><a href="aboutme/">Über mich</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+                
       <h1 class="title text-center">Web-Portfolio Malte Prieß</h1>
-
-<!--      <h2 class="text-center">Willkommen!</h2>-->
-
-<!--
-      <p>Schön, dass Sie auf meiner Seite vorbeischauen.</p>
-
-      <p>Sie können sich ruhig etwas umsehen. Im Blog dokumentiere ich meine Erfahrungen beim Programmieren. Daneben können Sie auch meine Webprojekte anschauen. Viel Spass.</p>
-
-      <img src="SpongeBob.jpg" alt="Foto von mir">
--->
 
     </div>
       
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
   </body>
   
 </html>

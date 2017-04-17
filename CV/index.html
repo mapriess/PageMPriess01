@@ -3,27 +3,38 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../main.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Kontakt - Web Portfolio von Malte</title>
   </head>
   
   <body>
 
-    <div class="container">    
+    <div class="container col-sm-offset-2 col-sm-8">    
 
-      <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li><a href="../">Home</a></li>
-            <li><a href="../projects/">Projekte</a></li>
-            <li class="active"><a href="../CV/">CV</a></li>
-            <li><a href="../contact/">Kontakt</a></li>
-            <li><a href="../aboutme/">Über mich</a></li>
-          </ul>
-        </div>
-      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+<!--            <a class="navbar-brand" href="#">Web-Portfolio</a>-->
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../">Home</a></li>
+              <li><a href="../projects/">Projekte</a></li>
+              <li class="active"><a href="../CV/">CV</a></li>
+              <li><a href="../aboutme/">Über mich</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 
       <h1 class="title text-center">CV</h1>
 
@@ -55,15 +66,18 @@
 
       <h2>Doktorarbeit</h2>
       
-      <p class="bodytext"><i>&quot;Surrogat-Basierte Optimierung für Marine Ökosystem-Modelle&quot;</i> 
+      <p><i>&quot;Surrogat-Basierte Optimierung für Marine Ökosystem-Modelle&quot;</i> 
       </p>
-      <p class="bodytext"><a href="http://macau.uni-kiel.de/receive/dissertation_diss_00007782" title="PDF Universitätsbibliothek Kiel" target="_blank">PDF&nbsp;Universitätsbibliothek Kiel<br /><br /></a>
+      <p><a href="http://macau.uni-kiel.de/receive/dissertation_diss_00007782" title="PDF Universitätsbibliothek Kiel" target="_blank">PDF&nbsp;Universitätsbibliothek Kiel<br /><br /></a>
       </p>
-      <p class="bodytext">Marine Ökosystem-Modelle sind von großer Bedeutung, um die ozeanische  Aufnahme von Kohlendioxid zu verstehen sowie Vorhersagen über die  Reaktionen des marinen Ökosystems auf den Klimawandel treffen zu können.  Die Anwendbarkeit eines marinen Ökosystem-Modells für prognostische  Simulationen hängt entscheidend von seiner Fähigkeit ab, die tatsächlich  beobachteten physikalischen und biogeochemischen Prozesse  wiederzugeben. Um die Qualität von verschiedenen Modellen zu validieren,  werden diese typischerweise an vorhandene Beobachtungsdaten  angeglichen. Diese Validierung (oder Parameteridentifikation) erfordert  die Anpassungen von in der Regel wenig bekannten Modellparametern. Die  direkte Kalibrierung des Modells mit Hilfe konventioneller  Optimierungsalgorithmen ist üblicherweise ein langwieriger Prozess, der  gegebenenfalls sogar jenseits verfügbarer Rechenressourcen liegt. Ein  Grund dafür ist die meist große Zahl erforderlicher Modellsimulationen.  Dies führt insbesondere dann zu einem erheblichen Rechenaufwand, wenn  bereits eine einzelne Modellauswertung teure Computersimulationen  notwendig macht. Ein Beispiel hierfür ist die Kalibrierung gekoppelter  mariner Ökosystem-Modelle. Rechenzeiten von Stunden bis hin zu mehreren  Tagen für eine einzelne Modellauswertung sind nicht unüblich. Eine  effiziente Optimierung von teuren Computermodellen lässt sich  beispielsweise mit Hilfe von surrogat-basierten Optimierungsverfahren  realisieren. Ein Surrogat&nbsp;–&nbsp;eine schnelle aber dennoch ausreichend  genaue Approximation des sogenannten feinen Modells&nbsp;–&nbsp;ermöglicht hierbei  dessen Optimierung. Diese Arbeit umfasst die Untersuchung und Anwendung  von Verfahren im Rahmen surrogat-basierter Optimierungsalgorithmen, bei  denen die Surrogate auf sogenannten physikalischen groben Modellen  beruhen. Übergreifendes Ziel ist eine effiziente und schnelle  Kalibrierung von marinen Ökosystem-Modellen.</p>
+      <p>Marine Ökosystem-Modelle sind von großer Bedeutung, um die ozeanische  Aufnahme von Kohlendioxid zu verstehen sowie Vorhersagen über die  Reaktionen des marinen Ökosystems auf den Klimawandel treffen zu können.  Die Anwendbarkeit eines marinen Ökosystem-Modells für prognostische  Simulationen hängt entscheidend von seiner Fähigkeit ab, die tatsächlich  beobachteten physikalischen und biogeochemischen Prozesse  wiederzugeben. Um die Qualität von verschiedenen Modellen zu validieren,  werden diese typischerweise an vorhandene Beobachtungsdaten  angeglichen. Diese Validierung (oder Parameteridentifikation) erfordert  die Anpassungen von in der Regel wenig bekannten Modellparametern. Die  direkte Kalibrierung des Modells mit Hilfe konventioneller  Optimierungsalgorithmen ist üblicherweise ein langwieriger Prozess, der  gegebenenfalls sogar jenseits verfügbarer Rechenressourcen liegt. Ein  Grund dafür ist die meist große Zahl erforderlicher Modellsimulationen.  Dies führt insbesondere dann zu einem erheblichen Rechenaufwand, wenn  bereits eine einzelne Modellauswertung teure Computersimulationen  notwendig macht. Ein Beispiel hierfür ist die Kalibrierung gekoppelter  mariner Ökosystem-Modelle. Rechenzeiten von Stunden bis hin zu mehreren  Tagen für eine einzelne Modellauswertung sind nicht unüblich. Eine  effiziente Optimierung von teuren Computermodellen lässt sich  beispielsweise mit Hilfe von surrogat-basierten Optimierungsverfahren  realisieren. Ein Surrogat&nbsp;–&nbsp;eine schnelle aber dennoch ausreichend  genaue Approximation des sogenannten feinen Modells&nbsp;–&nbsp;ermöglicht hierbei  dessen Optimierung. Diese Arbeit umfasst die Untersuchung und Anwendung  von Verfahren im Rahmen surrogat-basierter Optimierungsalgorithmen, bei  denen die Surrogate auf sogenannten physikalischen groben Modellen  beruhen. Übergreifendes Ziel ist eine effiziente und schnelle  Kalibrierung von marinen Ökosystem-Modellen.</p>
 
       <h2>Kooperationen</h2>
       
-      <ul><li>Seit 2012&nbsp; <span><span class="Apple-style-span">Forschungskooperation mit <a href="http://www.informatik.uni-kiel.de/co2/mitarbeiterinnen/prof-dr-thomas-slawig/" target="_blank">Prof. Dr. Thomas Slawig,&nbsp;Algorithmische Optimale Steuerung, Institut für Informatik, Christian-Albrechts-Universität zu Kiel</a></span></span></li><li>Seit 2010&nbsp; Forschungskooperation mit&nbsp;<a href="http://www.ru.is/kennarar/koziel/index.html" target="_blank" class="extTarget">Prof.&nbsp;Slawomir Koziel, Ph.D.,&nbsp;Engineering Optimization &amp; Modeling Center,&nbsp;School of Science and Engineering,&nbsp;Reykjavik University</a></li><li><span><span>2008 - 2011 Forschungskooperation&nbsp;mit <a href="http://www.geomar.de/de/mitarbeiter/fb2/bm/aoschlies/" target="_blank" class="external-link-new-window">Prof. Dr. Andreas Oschlies, Biogeochemische Modellierung, Helmholtz-Zentrum für Ozeanforschung Kiel | GEOMAR</a></span><span></span></span></li></ul>
+      <ul>
+        <li>Seit 2012&nbsp;Forschungskooperation mit <a href="http://www.informatik.uni-kiel.de/co2/mitarbeiterinnen/prof-dr-thomas-slawig/" target="_blank">Prof. Dr. Thomas Slawig,&nbsp;Algorithmische Optimale Steuerung, Institut für Informatik, Christian-Albrechts-Universität zu Kiel</a></li>
+        <li>Seit 2010&nbsp; Forschungskooperation mit&nbsp;<a href="http://www.ru.is/kennarar/koziel/index.html" target="_blank" class="extTarget">Prof.&nbsp;Slawomir Koziel, Ph.D.,&nbsp;Engineering Optimization &amp; Modeling Center,&nbsp;School of Science and Engineering,&nbsp;Reykjavik University</a></li>
+        <li>2008 - 2011 Forschungskooperation&nbsp;mit <a href="http://www.geomar.de/de/mitarbeiter/fb2/bm/aoschlies/" target="_blank" class="external-link-new-window">Prof. Dr. Andreas Oschlies, Biogeochemische Modellierung, Helmholtz-Zentrum für Ozeanforschung Kiel | GEOMAR</a></li></ul>
 
       <h2>Projekte, Lehre, andere Aktivitäten</h2>      
 
@@ -71,45 +85,50 @@
 
       <h2>Publikationen</h2>      
 
-      <p class="bodytext">Prieß M., Koziel S., Slawig T.: <a href="http://www.sciencedirect.com/science/article/pii/S1877750313000409" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Marine Ecosystem Model Calibration with Real Data Using Enhanced Surrogate-Based Optimization</a>.&nbsp;<i>Journal of Computational Science</i><i>&nbsp;</i>(2013)
+      <p>Prieß M., Koziel S., Slawig T.: <a href="http://www.sciencedirect.com/science/article/pii/S1877750313000409" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Marine Ecosystem Model Calibration with Real Data Using Enhanced Surrogate-Based Optimization</a>.&nbsp;<i>Journal of Computational Science</i><i>&nbsp;</i>(2013)
       </p>
-      <p class="bodytext">Prieß M., Piwonski J., Koziel S., Oschlies, A., Slawig T.: <a href="http://www.sciencedirect.com/science/article/pii/S1463500313000693" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Accelerated Parameter Identification in a 3D Marine Biogeochemical Model Using Surrogate-Based Optimization.&nbsp;</a><i>Ocean Modelling</i> (2013) 
+      <p>Prieß M., Piwonski J., Koziel S., Oschlies, A., Slawig T.: <a href="http://www.sciencedirect.com/science/article/pii/S1463500313000693" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Accelerated Parameter Identification in a 3D Marine Biogeochemical Model Using Surrogate-Based Optimization.&nbsp;</a><i>Ocean Modelling</i> (2013) 
       </p>
-      <p class="bodytext">Prieß, M.: <a href="http://oceanrep.geomar.de/19667/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Surrogate-Based Optimitaion for Marine Ecosystem Models</a><i>, </i>Doktorarbeit, Christian-Albrechts-Universität Kiel, Kiel, Deutschland, 125 pp&nbsp;(2012) 
+      <p>Prieß, M.: <a href="http://oceanrep.geomar.de/19667/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Surrogate-Based Optimitaion for Marine Ecosystem Models</a><i>, </i>Doktorarbeit, Christian-Albrechts-Universität Kiel, Kiel, Deutschland, 125 pp&nbsp;(2012) 
       </p>
-      <p class="bodytext">Prieß M., Piwonski J., Koziel S., Slawig T.: <a href="http://iospress.metapress.com/content/24781v27358ur2l6/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Parameter Identification in Climate Models using Surrogate-based Optimization</a>. <i>Journal of Computational Methods in Science and Engineering</i> 12, 47-62&nbsp;(2012)
+      <p>Prieß M., Piwonski J., Koziel S., Slawig T.: <a href="http://iospress.metapress.com/content/24781v27358ur2l6/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Parameter Identification in Climate Models using Surrogate-based Optimization</a>. <i>Journal of Computational Methods in Science and Engineering</i> 12, 47-62&nbsp;(2012)
       </p>
-      <p class="bodytext">Prieß M., Koziel S., Slawig T.: <a href="http://www.springerlink.com/content/h72137w327770161/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Marine Ecosystem Model Calibration through Enhanced Surrogate-Based Optimization</a>. in: Pina, N., Kacprzyk, J., Filipe, J. (Eds.), Simulation and Modeling Methodologies, Technologies and Applications. Springer Berlin Heidelberg. <i>Advances in Intelligent Systems and Computing</i> 197, Part 2, 193-208 (2013)
+      <p>Prieß M., Koziel S., Slawig T.: <a href="http://www.springerlink.com/content/h72137w327770161/" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Marine Ecosystem Model Calibration through Enhanced Surrogate-Based Optimization</a>. in: Pina, N., Kacprzyk, J., Filipe, J. (Eds.), Simulation and Modeling Methodologies, Technologies and Applications. Springer Berlin Heidelberg. <i>Advances in Intelligent Systems and Computing</i> 197, Part 2, 193-208 (2013)
       </p>
-      <p class="bodytext">Prieß M., Slawig T.: <a href="http://www.inderscience.com/search/index.php?action=record&amp;rec_id=44732" target="_blank" class="external-link-new-window">Aggressive Space Mapping for the Optimization of a Marine Ecosystem Model</a>. <i>International Journal of Mathematical Modeling and Numerical Optimization</i> 3, 98-116 (2012) 
+      <p>Prieß M., Slawig T.: <a href="http://www.inderscience.com/search/index.php?action=record&amp;rec_id=44732" target="_blank" class="external-link-new-window">Aggressive Space Mapping for the Optimization of a Marine Ecosystem Model</a>. <i>International Journal of Mathematical Modeling and Numerical Optimization</i> 3, 98-116 (2012) 
       </p>
-      <p class="bodytext">Prieß M., Koziel S., Slawig T.:&nbsp;Improved Surrogate-Based Optimization of Climate Model Parameters Using Response Correction. <a href="http://www.simultech.org/SIMULTECH2011/call_for_papers.asp#publications" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Conference Proceedings, Int. Conf. Simulation and Modeling Methodologies, Technologies and Appl., SIMULTECH 2011</a>, Noordwijkerhout, The Netherlands, July 29–31, pp. 449–457 (2011) (selected for publication in &quot;Advances in Intelligent and Soft Computing Series&quot; published by Springer-Verlag) 
+      <p>Prieß M., Koziel S., Slawig T.:&nbsp;Improved Surrogate-Based Optimization of Climate Model Parameters Using Response Correction. <a href="http://www.simultech.org/SIMULTECH2011/call_for_papers.asp#publications" title="Öffnet einen externen Link in einem neuen Fenster" target="_blank" class="external-link-new-window">Conference Proceedings, Int. Conf. Simulation and Modeling Methodologies, Technologies and Appl., SIMULTECH 2011</a>, Noordwijkerhout, The Netherlands, July 29–31, pp. 449–457 (2011) (selected for publication in &quot;Advances in Intelligent and Soft Computing Series&quot; published by Springer-Verlag) 
       </p>
-      <p class="bodytext">Prieß M., Koziel S., Slawig T.: <a href="http://dx.doi.org/10.1016/j.jocs.2011.08.004" target="_blank" class="extTarget">Surrogate-Based Optimization of Climate Model Parameters Using Response Correction.</a> <i>Journal of Computational Science </i>2, 335–344 (2011) 
+      <p>Prieß M., Koziel S., Slawig T.: <a href="http://dx.doi.org/10.1016/j.jocs.2011.08.004" target="_blank" class="extTarget">Surrogate-Based Optimization of Climate Model Parameters Using Response Correction.</a> <i>Journal of Computational Science </i>2, 335–344 (2011) 
       </p>
-      <p class="bodytext">Prieß M., Slawig T.: <a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=APCPCS001281000001000612000001&amp;idtype=cvips&amp;gifs=yes&amp;ref=no" target="_blank" class="extTarget">Surrogate-based Optimization of Biogeochemical Transport Models</a>. Proceedings of the 8th International Conference of Numerical Analysis and Applied Mathematics, September 2010, <i>AIP Conference Proceedings</i>. <i>Mathematical and Statistical Physics</i> <i>1281</i>, 612–616 (2010) 
+      <p>Prieß M., Slawig T.: <a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=APCPCS001281000001000612000001&amp;idtype=cvips&amp;gifs=yes&amp;ref=no" target="_blank" class="extTarget">Surrogate-based Optimization of Biogeochemical Transport Models</a>. Proceedings of the 8th International Conference of Numerical Analysis and Applied Mathematics, September 2010, <i>AIP Conference Proceedings</i>. <i>Mathematical and Statistical Physics</i> <i>1281</i>, 612–616 (2010) 
       </p>
-      <p class="bodytext">Harms J., Mahrdt C., Otto M., Prieß M., Danzmann K.: <a href="http://prd.aps.org/abstract/PRD/v77/i12/e123010" target="_blank" class="extTarget">Subtraction-noise Projection in Gravitational-Wave Detector Networks.</a> <i>Physical Review D </i>77 (12) (2008)</p>
+      <p>Harms J., Mahrdt C., Otto M., Prieß M., Danzmann K.: <a href="http://prd.aps.org/abstract/PRD/v77/i12/e123010" target="_blank" class="extTarget">Subtraction-noise Projection in Gravitational-Wave Detector Networks.</a> <i>Physical Review D </i>77 (12) (2008)</p>
       
       <h2>Vorträge und Poster (Auswahl)</h2>
             
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2013_04_PRIESS_Vortrag_Abschluss.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a> (Abschlussvortrag), April 2013, BM-Seminar, GEOMAR, Kiel
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2013_04_PRIESS_Vortrag_Abschluss.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a> (Abschlussvortrag), April 2013, BM-Seminar, GEOMAR, Kiel
       </p>
-      <p class="bodytext">Matle Prieß,&nbsp;<a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2012_08_PRIESS_Vortrag_SMSMEO.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a> (Vortrag), August 2012, SMSMEO Workshop, Reykjavik University, Island
+      <p>Matle Prieß,&nbsp;<a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2012_08_PRIESS_Vortrag_SMSMEO.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a> (Vortrag), August 2012, SMSMEO Workshop, Reykjavik University, Island
       </p>
-      <p class="bodytext">Malte Prieß:&nbsp;<a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2012_01_Defense_PRIESS.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a>&nbsp;(Verteidigung), Februar 2012,&nbsp;Christian-Albrechts-Universität zu Kiel 
+      <p>Malte Prieß:&nbsp;<a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2012_01_Defense_PRIESS.pdf" target="_blank">Surrogate-Based Optimization for Marine Ecosystem Models</a>&nbsp;(Verteidigung), Februar 2012,&nbsp;Christian-Albrechts-Universität zu Kiel 
       </p>
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_11_Vortrag_Ifm_Geomar_PRIESS.pdf" target="_blank">Surrogate-Based Optimization for Validation of Marine Ecosystem Models</a> (Vortrag), November 2011, Group Meeting, IFM-GEOMAR, Kiel 
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_11_Vortrag_Ifm_Geomar_PRIESS.pdf" target="_blank">Surrogate-Based Optimization for Validation of Marine Ecosystem Models</a> (Vortrag), November 2011, Group Meeting, IFM-GEOMAR, Kiel 
       </p>
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_07_Vortrag_ASDOM.pdf" target="_blank">Surrogate-Based Optimization of Climate Model Parameters</a> (Vortrag), August 2011, International Workshop on Advances in Simulation-Driven Optimization and Modeling (ASDOM 2011), Reykjavik, Island 
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_07_Vortrag_ASDOM.pdf" target="_blank">Surrogate-Based Optimization of Climate Model Parameters</a> (Vortrag), August 2011, International Workshop on Advances in Simulation-Driven Optimization and Modeling (ASDOM 2011), Reykjavik, Island 
       </p>
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_05_Vortrag_SIAM_OP11_Darmstadt.pdf" target="_blank">Surrogate-Based Optimization of Climate Model Parameters </a>(Vortrag), Mai 2011, SIAM Conference on Optimization, Darmstadt 
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/2011_05_Vortrag_SIAM_OP11_Darmstadt.pdf" target="_blank">Surrogate-Based Optimization of Climate Model Parameters </a>(Vortrag), Mai 2011, SIAM Conference on Optimization, Darmstadt 
       </p>
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/Vortrag_RU_Island_11_2010_reduced.pdf" target="_blank">Algorithmic Optimal Control - CO2 Uptake of the Ocean-Junior Research Group A3: Research Challenges and Recent Results</a> (Vortrag), November 2010, Engineering Optimization &amp; Modeling Center, Universität Reykjavik, Island 
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/Vortrag_RU_Island_11_2010_reduced.pdf" target="_blank">Algorithmic Optimal Control - CO2 Uptake of the Ocean-Junior Research Group A3: Research Challenges and Recent Results</a> (Vortrag), November 2010, Engineering Optimization &amp; Modeling Center, Universität Reykjavik, Island 
       </p>
-      <p class="bodytext">Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_ICNAAM2010_09_2010.pdf" target="_blank">Surrogate-based Optimization of Biogeochemical Models</a> (Vortrag), September 2010, 8th International Conference of Numerical Analysis and Applied Mathematics (ICNAAM 2010), Rhodos, Griechenland<br />Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_Pinnau_Kaiserslautern_24_03_2010.pdf" target="_blank">Space Mapping Optimization and Model Reduction for Biogeochemical Models</a> (Vortrag), März 2010, AG Technomathematik Prof. Rene Pinnau, TU Kaiserslautern<br />Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_INTERDYNAMIK_Bremen_03_04_2008.pdf" target="_blank">LOOP Current variability – its relation to meridional overturning circulation and the impact of Mississippi discharge</a> (Vortrag), März 2008, INTERDYNAMIK, Bremen</p>
+      <p>Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_ICNAAM2010_09_2010.pdf" target="_blank">Surrogate-based Optimization of Biogeochemical Models</a> (Vortrag), September 2010, 8th International Conference of Numerical Analysis and Applied Mathematics (ICNAAM 2010), Rhodos, Griechenland<br />Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_Pinnau_Kaiserslautern_24_03_2010.pdf" target="_blank">Space Mapping Optimization and Model Reduction for Biogeochemical Models</a> (Vortrag), März 2010, AG Technomathematik Prof. Rene Pinnau, TU Kaiserslautern<br />Malte Prieß: <a href="http://www.informatik.uni-kiel.de/fileadmin/arbeitsgruppen/co2/Praesentationen/PRIESS_Vortrag_INTERDYNAMIK_Bremen_03_04_2008.pdf" target="_blank">LOOP Current variability – its relation to meridional overturning circulation and the impact of Mississippi discharge</a> (Vortrag), März 2008, INTERDYNAMIK, Bremen</p>
       
     </div>
       
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
   </body>
 </html>
